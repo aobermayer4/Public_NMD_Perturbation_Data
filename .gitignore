@@ -1,0 +1,14 @@
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+.ipynb_checkpoints/
+__pycache__/
+
+data/raw/
+*.bam
+*.bai
+*.loom
+*.h5ad
+
