@@ -1,0 +1,46 @@
+MAGE-TAB Version	1.1
+Investigation Title	Initial Test-RNA-Seq of UPF1 depletion in human colorectal adenocarcinoma cell line HCT116 via the auxin-inducible degron (AID) system
+Experiment Description	UPF1 is a multi-domain RNA helicase that constantly monitors the transcriptome by non-specifically binding to mRNAs, dissociating from non-target transcripts, and initiating degradation on selected target RNAs via multiple proposed pathways such as nonsense-mediated decay (NMD). NMD is a translation-coupled mechanism that targets mRNAs harboring a premature stop codon (PTC) for degradation, thereby serving as a quality control and gene regulatory pathway ensuring transcriptome integrity. The UPF1 gene is essential in cultured human cells and previous studies relied mostly on RNA interference to downregulate UPF1. Here we established an auxin-inducible UPF1 degron system in the human colorectal adenocarcinoma cell line HCT116 by first inserting the auxin receptor F-box protein-encoding AtAFB2-mCherry in the AAVS1 locus, followed by tagging UPF1 at the N-terminus or C-terminus with an V5-AID-tag (AID = miniIAA7 = AtIAA7 amino acids 37–104). With these cell lines we wanted to assess the transcriptome-wide expression changes upon rapid depletion of UPF1, estimate the effects of auxin treatment and compare N-terminal versus C-terminal tagging. To this end, depletion of UPF1 was induced with 500 µM indole-3-acetic acid (IAA) for various time periods (0-12h). As controls, the parental cell line (with AtAFB2-mCherry in the AAVS1 locus) or untreated cells were used.
+Experimental Design	case control design	compound treatment design	genetic modification design	time series design
+Experimental Design Term Source REF	EFO	EFO	EFO	EFO
+Experimental Design Term Accession Number	EFO:0001427	EFO:0001755	EFO:0001758	EFO:0001779
+Experimental Factor Name	genotype	compound	dose	time
+Experimental Factor Type	genotype	compound	dose	time
+Experimental Factor Term Source REF	EFO	EFO	EFO	EFO
+Experimental Factor Term Accession Number	EFO_0000513	CHEBI_24431	EFO_0000428	EFO_0000721
+Person Last Name	Böhm	Landthaler
+Person First Name	Volker	Markus
+Person Mid Initials
+Person Email	boehmv@uni-koeln.de	markus.landthaler@mdc-berlin.de
+Person Phone	++49 (0)221 470 5260
+Person Fax
+Person Address	Zülpicher Str. 47a 50674 Cologne Germany	Hannoversche Straße 28 10115 Berlin Germany
+Person Affiliation	Gehring Lab Institute for Genetics  University of Cologne	Max Delbrück Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Institute for Medical Systems Biology
+Person Roles	data analyst;submitter	investigator
+Date of Experiment	
+Public Release Date	2025-09-01
+PubMed ID	40934927
+Publication DOI	10.1016/j.molcel.2025.08.015
+Publication Author List	Boehm V, Wallmeroth D, Wulf PO, Popp O, Teixeira Alves LG, Reinecke L, Riedel M, Wyler E, Franitza M, Becker K, Polkovnychenko K, Del Giudice S, Benlasfer N, Mertins P, Landthaler M, Gehring NH.
+Publication Title	Rapid UPF1 depletion illuminates the temporal dynamics of the NMD-regulated human transcriptome.
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+Protocol Name	P-MTAB-141162	P-MTAB-141163	P-MTAB-141164	P-MTAB-141165	P-MTAB-141166	P-MTAB-141167	P-MTAB-141168
+Protocol Type	sample collection protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	growth protocol	treatment protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0002944	EFO_0004184	EFO_0004170	EFO_0003789	EFO_0003969	EFO_0003816
+Protocol Description	Cells were harvested and lysed by adding 400 µl Invitrogen™ TRIzol™ Reagent (Invitrogen; Cat# 15596018) to each well.	Total RNA was extracted using the Direct-zol RNA MiniPrep kit (Zymo Research; Cat# R2052) including the recommended DNase I treatment according to the manufacturer's instructions.	poly(A) mRNA isolation and library preparation was carried out with 600 ng RNA as input using the NEBNext Poly (A) mRNA magnetic isolation module (NEB; Cat#E7490L) and NEBNext Ultra II Directional RNA library preparation kit (NEB; Cat#E7760L) according to the manufacturer's instructions.	The pool was quantified by using the KAPA Library Quantification Kit and sequenced on an Illumina NovaSeq6000 sequencer with 28+150bp protocol, targeting approximately 20 million reads.	Control, N-AID-UPF1 and C-AID-UPF1-tagged HCT116 cell lines were maintained at 37°C and 5% CO2 in a humidified incubator in McCoy's 5A (Modified) Medium (Gibco), supplemented with 10% fetal bovine serum (Gibco) and 2 mM L-glutamine (Gibco).	3x10^5 cells were seeded in 24-well plates one day before starting the depletion experiment. UPF1 depletion was induced with 500 µM indole-3-acetic acid (IAA; Sigma-Aldrich; Cat# I5148) at various time points during the experiment (between 0 and 12 hours before harvesting). All cells were harvested at the same time to minimize differences in cell numbers.	Reads were aligned against the human genome (GRCh38, GENCODE release 42 transcript annotations supplemented with SIRVomeERCCome annotations from Lexogen; obtained from https://www.lexogen.com/sirvs/download/) using the STAR read aligner (version 2.7.10b, https://github.com/alexdobin/STAR).
+Protocol Hardware				Illumina NovaSeq 6000			
+Protocol Software							STAR read aligner (version 2.7.10b)
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/
+Term Source Version
+SDRF File	E-MTAB-13839.sdrf.txt
+Comment[AEExperimentType]	RNA-seq of coding RNA
+Comment[TemplateType]	Cell line - High-throughput sequencing
+Comment[RelatedExperiment]	E-MTAB-13836	E-MTAB-13837	E-MTAB-13788	E-MTAB-13789	E-MTAB-13787	E-MTAB-13829	E-MTAB-14755	E-MTAB-14725	PXD061797
+Comment[SecondaryAccession]	ERP157656
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR12685858-ERR12685858	http://www.ebi.ac.uk/ena/data/view/ERR12685858-ERR12685859	http://www.ebi.ac.uk/ena/data/view/ERR12685859-ERR12685860	http://www.ebi.ac.uk/ena/data/view/ERR12685860-ERR12685861	http://www.ebi.ac.uk/ena/data/view/ERR12685861-ERR12685862	http://www.ebi.ac.uk/ena/data/view/ERR12685862-ERR12685863	http://www.ebi.ac.uk/ena/data/view/ERR12685863-ERR12685864	http://www.ebi.ac.uk/ena/data/view/ERR12685864-ERR12685865	http://www.ebi.ac.uk/ena/data/view/ERR12685865-ERR12685866	http://www.ebi.ac.uk/ena/data/view/ERR12685866-ERR12685867	http://www.ebi.ac.uk/ena/data/view/ERR12685867-ERR12685868	http://www.ebi.ac.uk/ena/data/view/ERR12685868-ERR12685869	http://www.ebi.ac.uk/ena/data/view/ERR12685869-ERR12685870	http://www.ebi.ac.uk/ena/data/view/ERR12685870-ERR12685871	http://www.ebi.ac.uk/ena/data/view/ERR12685871-ERR12685872	http://www.ebi.ac.uk/ena/data/view/ERR12685872-ERR12685873	http://www.ebi.ac.uk/ena/data/view/ERR12685873-ERR12685874	http://www.ebi.ac.uk/ena/data/view/ERR12685874-ERR12685875	http://www.ebi.ac.uk/ena/data/view/ERR12685875-ERR12685876	http://www.ebi.ac.uk/ena/data/view/ERR12685876-ERR12685877	http://www.ebi.ac.uk/ena/data/view/ERR12685877-ERR12685878	http://www.ebi.ac.uk/ena/data/view/ERR12685878-ERR12685879	http://www.ebi.ac.uk/ena/data/view/ERR12685879-ERR12685880	http://www.ebi.ac.uk/ena/data/view/ERR12685880-ERR12685881	http://www.ebi.ac.uk/ena/data/view/ERR12685881-ERR12685881
+Comment[Submitted Name]	Initial Test-RNA-Seq of UPF1 depletion in human colorectal adenocarcinoma cell line HCT116 via the auxin-inducible degron (AID) system
+Comment[ArrayExpressAccession]	E-MTAB-13839

@@ -1,0 +1,45 @@
+MAGE-TAB Version	1.1
+Investigation Title	Long-read ONT-dRNA and PacBio Kinnex full-length RNA sequencing of UPF1 depletion in human colorectal adenocarcinoma cell line HCT116 via the auxin-inducible degron (AID) system
+Experiment Description	UPF1 is a multi-domain RNA helicase that constantly monitors the transcriptome by non-specifically binding to mRNAs, dissociating from non-target transcripts, and initiating degradation on selected target RNAs via multiple proposed pathways such as nonsense-mediated decay (NMD). NMD is a translation-coupled mechanism that targets mRNAs harboring a premature stop codon (PTC) for degradation, thereby serving as a quality control and gene regulatory pathway ensuring transcriptome integrity. The UPF1 gene is essential in cultured human cells and previous studies relied mostly on RNA interference to downregulate UPF1. Here we established an auxin-inducible UPF1 degron system in the human colorectal adenocarcinoma cell line HCT116 by first inserting the auxin receptor F-box protein-encoding AtAFB2-mCherry in the AAVS1 locus, followed by tagging UPF1 at the N-terminus with an V5-AID-tag (AID = miniIAA7 = AtIAA7 amino acids 37–104). With this cell line and using long-read sequencing approaches (ONT-direct RNA sequencing [ONT-dRNA] and PacBio Kinnex full-length RNA sequencing) we wanted to explore the changes in transcript isoform composition upon rapid depletion of UPF1. To this end, depletion of UPF1 was induced with 500 µM indole-3-acetic acid (IAA) for 12h. As control untreated cells were used.
+Experimental Design	time series design	case control design	compound treatment design	genetic modification design
+Experimental Design Term Source REF	EFO	EFO	EFO	EFO
+Experimental Design Term Accession Number	EFO:0001779	EFO:0001427	EFO:0001755	EFO:0001758
+Experimental Factor Name	compound	dose	time
+Experimental Factor Type	compound	dose	time
+Experimental Factor Term Source REF	EFO	EFO	EFO
+Experimental Factor Term Accession Number	CHEBI_24431	EFO_0000428	EFO_0000721
+Person Last Name	Böhm	Landthaler
+Person First Name	Volker	Markus
+Person Mid Initials
+Person Email	boehmv@uni-koeln.de	markus.landthaler@mdc-berlin.de
+Person Phone	++49 (0)221 470 5260
+Person Fax
+Person Address	Zülpicher Str. 47a 50674 Cologne Germany	Hannoversche Straße 28 10115 Berlin Germany
+Person Affiliation	Gehring Lab Institute for Genetics  University of Cologne	Max Delbrück Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Institute for Medical Systems Biology
+Person Roles	data analyst;submitter	investigator
+Date of Experiment	2024-05-17
+Public Release Date	2025-06-01
+PubMed ID
+Publication DOI
+Publication Author List
+Publication Title
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+Protocol Name	P-MTAB-160631	P-MTAB-160632	P-MTAB-160633	P-MTAB-160634	P-MTAB-160635	P-MTAB-160636	P-MTAB-160637	P-MTAB-160638	P-MTAB-160639	P-MTAB-160640
+Protocol Type	growth protocol	treatment protocol	sample collection protocol	nucleic acid extraction protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	nucleic acid sequencing protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0003789	EFO_0003969	EFO_0005518	EFO_0002944	EFO_0002944	EFO_0004184	EFO_0004184	EFO_0004170	EFO_0004170	EFO_0003816
+Protocol Description	The N-AID-UPF1-tagged HCT116 cell line was maintained at 37°C and 5% CO2 in a humidified incubator in McCoy's 5A (Modified) Medium (Gibco), supplemented with 10% fetal bovine serum (Gibco) and 2 mM L-glutamine (Gibco).	5x10^6 cells were seeded per 15 cm dish one day before starting the depletion experiment. UPF1 depletion was induced with 500 µM indole-3-acetic acid (IAA; Sigma-Aldrich; Cat# I5148) for 12 hours. All cells were harvested at the same time to minimize differences in cell numbers.	Cells were harvested and lysed by adding 2 ml Invitrogen™ TRIzol™ Reagent (Invitrogen; Cat# 15596018) to each plate.	Total RNA was extracted using the Direct-zol RNA MiniPrep kit (Zymo Research; Cat# R2052) including the recommended DNase I treatment according to the manufacturer's instructions. Poly(A) mRNA was purified from total RNA using the Dynabeads™ mRNA Purification Kit (Invitrogen; Cat#61006). After one round of purification according to the manufacturer’s instruction, the samples were incubated for a second round of binding to the same beads, repeating the protocol for a second time after the rebinding of the RNA to the beads. Successful enrichment for poly(A) RNA was confirmed by High Sensitivity RNA ScreenTape Analysis.	Total RNA was extracted using the Direct-zol RNA MiniPrep kit (Zymo Research; Cat# R2052) including the recommended DNase I treatment according to the manufacturer's instructions. 	ONT direct RNA sequencing libraries were prepared from 300 ng of poly(A) RNA using the Direct RNA Sequencing Kit (Oxford Nanopore Technologies, #SQK-RNA004) following the manufacturer's instructions.	The PacBio Kinnex full-length RNA sequencing library was constructed from four total RNA samples. First, each sample was processed into a PacBio barcoded Iso-Seq library, starting with 420 ng of total RNA and using the Iso-Seq Express 2.0 Kit (PacBio, #103-071-500). Then, 14 ng of each Iso-Seq library was additionally amplified to introduce Kinnex overhangs at the ends of the library molecules and pooled together to prepare one Kinnex library using the Kinnex Concatenation Kit (PacBio, #103-072-000). 	Each ONT direct RNA sequencing library was loaded onto a PromethION RNA flow cell (Oxford Nanopore Technologies, #FLO-PRO004RA). Run limit was set to 72 hours, base-calling was performed with the High-accuracy model (130 bps) with the following software versions: MinKNOW (24.02.19), Bream (7.9.8), Configuration (5.9.18), Dorado (7.3.11), MinKNOW Core (5.9.12)	The Kinnex full-length RNA library was loaded onto a PacBio Revio 25M SMRT Cell (PacBio, #102-202-200). Desegmentation and demultiplexing of HiFi reads were performed using SMRT Link Version 13.1.0.221970	Reads were aligned against the human genome (GRCh38, GENCODE release 42 transcript annotations supplemented with SIRVomeERCCome annotations from Lexogen; obtained from https://www.lexogen.com/sirvs/download/) using the minimap2 read aligner (version 2.26-r1175, https://github.com/lh3/minimap2).
+Protocol Hardware								PromethION	Sequel II	
+Protocol Software								MinKNOW (24.02.19), Bream (7.9.8), Configuration (5.9.18), Dorado (7.3.11), MinKNOW Core (5.9.12)	SMRT Link Version 13.1.0.221970	minimap2 read aligner (version 2.26-r1175)
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/
+Term Source Version
+SDRF File	E-MTAB-14725.sdrf.txt
+Comment[AEExperimentType]	RNA-seq of coding RNA
+Comment[TemplateType]	Cell line - High-throughput sequencing
+Comment[SecondaryAccession]	ERP167383
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR14095914-ERR14095915	http://www.ebi.ac.uk/ena/data/view/ERR14095918-ERR14095919	http://www.ebi.ac.uk/ena/data/view/ERR15909901-ERR15909902	http://www.ebi.ac.uk/ena/data/view/ERR15909905-ERR15909906
+Comment[Submitted Name]	Long-read ONT-dRNA and PacBio Kinnex full-length RNA sequencing of UPF1 depletion in human colorectal adenocarcinoma cell line HCT116 via the auxin-inducible degron (AID) system
+Comment[ArrayExpressAccession]	E-MTAB-14725

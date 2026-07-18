@@ -1,0 +1,45 @@
+MAGE-TAB Version	1.1
+Investigation Title	RNA-Seq of SMG1-SMG8-SMG9 complex alterations in human osteosarcoma cell line U2OS
+Experiment Description	Nonsense-mediated mRNA decay (NMD) is a translation-dependent mRNA turnover pathway, which degrades transcripts containing premature termination codons. The execution of NMD requires the phosphorylation of N- and C-terminal tails of the key NMD factor UPF1, which thereby serve as binding platforms for the degradation factors SMG5, SMG6 and SMG7.  UPF1 phosphorylation is mediated by the kinase SMG1, whose activity is regulated by a heterodimer consisting of SMG8 and SMG9. Recent work indicated that SMG9 functions as a bridge between SMG1 and SMG8, allowing the C-terminus of SMG8 to elicits its role of stabilizing the autoinhibitory state of SMG1. Here, we established SMG8- and SMG9-depleted human osteosarcoma U2OS cells (Flp-In-T-REx-U2OS). With these cell lines we wanted to explore the regulatory role of SMG8 and SMG9 for NMD execution. Furthermore, we tested the transcriptomic changes upon treatment of cells with the SMG1 inhibitor SMG1i, which functions as an ATP-competitive inhibitor and binds to the active site of SMG1. Cells were treated with 0, 0.1 or 1 μM SMG1i for 24 h. As controls, the U2OS (WT or KO) cells were treated with DMSO.
+Experimental Design	case control design	compound treatment design	genetic modification design
+Experimental Design Term Source REF	EFO	EFO	EFO
+Experimental Design Term Accession Number	EFO:0001427	EFO:0001755	EFO:0001758
+Experimental Factor Name	genotype	compound	dose	time
+Experimental Factor Type	genotype	compound	dose	time
+Experimental Factor Term Source REF	EFO	EFO	EFO	EFO
+Experimental Factor Term Accession Number	EFO_0000513	CHEBI_24431	EFO_0000428	EFO_0000721
+Person Last Name	Böhm	Gehring
+Person First Name	Volker	Niels
+Person Mid Initials		H
+Person Email	boehmv@uni-koeln.de	ngehring@uni-koeln.de
+Person Phone	++49 (0)221 470 5260
+Person Fax
+Person Address	Zülpicher Str. 47a 50674 Cologne Germany	Zülpicher Str. 47a 50674 Cologne Germany
+Person Affiliation	Gehring Lab Institute for Genetics  University of Cologne	Gehring Lab Institute for Genetics  University of Cologne
+Person Roles	data analyst;submitter	investigator
+Date of Experiment	2025-10-13
+Public Release Date	2026-06-26
+PubMed ID
+Publication DOI
+Publication Author List
+Publication Title
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+Protocol Name	P-MTAB-161404	P-MTAB-161405	P-MTAB-161406	P-MTAB-161407	P-MTAB-161408	P-MTAB-161409	P-MTAB-161410
+Protocol Type	sample collection protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	growth protocol	treatment protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0002944	EFO_0004184	EFO_0004170	EFO_0003789	EFO_0003969	EFO_0003816
+Protocol Description	Cells were harvested and lysed by adding 1 ml of in-house prepared TRI reagent to each well (prepared following DOI: 10.1371/journal.pbio.3000107).	Total RNA was extracted using the Direct-zol RNA MiniPrep kit (Zymo Research; Cat# R2052) including the recommended DNase I treatment according to the manufacturer's instructions.	ERCC RNA Spike-In Mix 1 (Thermo Fisher Scientific, Cat# 4456740) was added to the total RNA sample before library preparation. Libraries was prepared using the Stranded mRNA Preparation Kit (Illumina). Library preparation started with 500ng total RNA. After poly-A selection (using poly-T oligo-attached magnetic beads), mRNA was purified and fragmented using divalent cations under elevated temperature. The RNA fragments underwent reverse transcription using random primers. This was followed by second strand cDNA synthesis. After end repair and A-tailing, indexing adapters were ligated. The products were then purified and amplified (12 PCR cycles) to create the final cDNA library. After validation (TapeStation, Agilent Technologies) and quantification (Qubit, Thermo Fisher Scientific) individual libraries were pooled. 	The library pools were quantified using the Collibri Library Quantification Kit (Thermo Fisher Scientific) and the QuantStudio 5 Real-Time PCR System (Thermo Fisher Scientific). Libraries were subsequently sequenced on an Illumina NovaSeq 6000 instrument using a 2x100 bp sequencing protocol and aiming for 50 million clusters per sample.	All cell lines were maintained at 37°C and 5% CO2 in a humidified incubator in DMEM with high glucose and GlutaMAX supplement (Gibco; Cat# 61965059), supplemented with 9% fetal bovine serum (Gibco; Cat# 10270106) and 1x Penicillin-Streptomycin (Gibco; Cat# 15140122).	2.5x10^5 cells were seeded in 6-well plates and treated 2 days later for 24 hours with DMSO as control, 0.1 µM or 1 µM SMG1i. Thus, the cells were harvested 3 days after the seeding. 	Reads were aligned against the human genome (GRCh38, GENCODE release 42 transcript annotations supplemented with SIRVomeERCCome annotations from Lexogen; obtained from https://www.lexogen.com/sirvs/download/) using the STAR read aligner (version 2.7.10b, https://github.com/alexdobin/STAR).
+Protocol Hardware				Illumina NovaSeq 6000			
+Protocol Software							STAR read aligner (version 2.7.10b)
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/
+Term Source Version
+SDRF File	E-MTAB-16399.sdrf.txt
+Comment[AEExperimentType]	RNA-seq of coding RNA
+Comment[TemplateType]	Cell line - High-throughput sequencing
+Comment[SecondaryAccession]	ERP186721
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR16040674-ERR16040674	http://www.ebi.ac.uk/ena/data/view/ERR16040674-ERR16040675	http://www.ebi.ac.uk/ena/data/view/ERR16040675-ERR16040676	http://www.ebi.ac.uk/ena/data/view/ERR16040676-ERR16040677	http://www.ebi.ac.uk/ena/data/view/ERR16040677-ERR16040678	http://www.ebi.ac.uk/ena/data/view/ERR16040678-ERR16040679	http://www.ebi.ac.uk/ena/data/view/ERR16040679-ERR16040680	http://www.ebi.ac.uk/ena/data/view/ERR16040680-ERR16040681	http://www.ebi.ac.uk/ena/data/view/ERR16040681-ERR16040682	http://www.ebi.ac.uk/ena/data/view/ERR16040682-ERR16040683	http://www.ebi.ac.uk/ena/data/view/ERR16040683-ERR16040684	http://www.ebi.ac.uk/ena/data/view/ERR16040684-ERR16040685	http://www.ebi.ac.uk/ena/data/view/ERR16040685-ERR16040686	http://www.ebi.ac.uk/ena/data/view/ERR16040686-ERR16040687	http://www.ebi.ac.uk/ena/data/view/ERR16040687-ERR16040688	http://www.ebi.ac.uk/ena/data/view/ERR16040688-ERR16040689	http://www.ebi.ac.uk/ena/data/view/ERR16040689-ERR16040690	http://www.ebi.ac.uk/ena/data/view/ERR16040690-ERR16040691	http://www.ebi.ac.uk/ena/data/view/ERR16040691-ERR16040692	http://www.ebi.ac.uk/ena/data/view/ERR16040692-ERR16040693	http://www.ebi.ac.uk/ena/data/view/ERR16040693-ERR16040694	http://www.ebi.ac.uk/ena/data/view/ERR16040694-ERR16040695	http://www.ebi.ac.uk/ena/data/view/ERR16040695-ERR16040696	http://www.ebi.ac.uk/ena/data/view/ERR16040696-ERR16040697	http://www.ebi.ac.uk/ena/data/view/ERR16040697-ERR16040698	http://www.ebi.ac.uk/ena/data/view/ERR16040698-ERR16040699	http://www.ebi.ac.uk/ena/data/view/ERR16040699-ERR16040700	http://www.ebi.ac.uk/ena/data/view/ERR16040700-ERR16040700
+Comment[Submitted Name]	RNA-Seq of SMG1-SMG8-SMG9 complex alterations in human osteosarcoma cell line U2OS
+Comment[ArrayExpressAccession]	E-MTAB-16399

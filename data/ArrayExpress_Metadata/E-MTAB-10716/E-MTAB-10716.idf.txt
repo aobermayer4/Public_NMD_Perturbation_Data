@@ -1,0 +1,46 @@
+MAGE-TAB Version	1.1
+Investigation Title	RNA-Seq of WT Flp-In T-REx 293, UPF3B knockout and UPF3A-UPF3B double knockout cell lines with additional siRNA-mediated control or UPF3B knockdowns
+Experiment Description	UPF3A and UPF3B are paralogous genes in human cells that are involved in the nonsense-mediated decay (NMD) pathway. NMD is a cellular quality control mechanism that monitors mRNAs during translation. Aberrant translation due to features such as the presence of a premature stop codon downstream on an exon-exon junction activates NMD and leads to the degradation of the mRNA. To investigate the role of UPF3B and UPF3A in NMD, we have generated UPF3B knockout (KO) and UPF3A-UPF3B double KO (dKO) human Flp-In T-REx 293 cells using CRISPR-Cas9. We generated RNA-Sequencing data for wildtype, UPF3B KO and UPF3A-UPF3B dKO cells with additional siRNA-mediated knockdown of Luciferase (Luc) as control or UPF3B.
+Experimental Design	case control design	genetic modification design
+Experimental Design Term Source REF	EFO	EFO
+Experimental Design Term Accession Number	EFO:0001427	EFO:0001758
+Experimental Factor Name	genotype	RNA interference
+Experimental Factor Type	genotype	RNA interference
+Experimental Factor Term Source REF	EFO	EFO
+Experimental Factor Term Accession Number	EFO_0000513	GO_0016246
+Person Last Name	Böhm
+Person First Name	Volker
+Person Mid Initials
+Person Email	boehmv@uni-koeln.de
+Person Phone	++49 (0)221 470 5260
+Person Fax
+Person Address	Zülpicher Str. 47a 50674 Cologne Germany
+Person Affiliation	Gehring Lab Institute for Genetics  University of Cologne
+Person Roles	data analyst;submitter
+Date of Experiment	2019-12-11
+Public Release Date	2022-04-25
+PubMed ID	35451084
+Publication DOI	10.15252/embj.2021109191
+Publication Author List	Wallmeroth D, Lackmann JW, Kueckelmann S, Altmüller J, Dieterich C, Boehm V, Gehring NH.
+Publication Title	Human UPF3A and UPF3B enable fault-tolerant activation of nonsense-mediated mRNA decay.
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+Protocol Name	P-MTAB-112022	P-MTAB-112023	P-MTAB-112024	P-MTAB-112025	P-MTAB-112026
+Protocol Type	sample collection protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0002944	EFO_0004184	EFO_0004170	EFO_0003816
+Protocol Description	Flp-In 293 T-REx (Thermo Fisher Scientific) WT, UPF3B-KO and UPF3A-UPF3B dKO cells were maintained at 37° C, 5% CO2 and 90% humidity in Dublecco’s Modified Eagle Medium (DMEM, Thermo Fisher Scientific) supplemented with 9% fetal bovine serum (FBS) and Penicillin-Streptomycin (both Thermo Fisher Scientific). For siRNA transfection, cells were reverse transfected with 60 pmol siRNA targeting UPF3A (or Luc in the negative control) per 2 x 10^5 cells using 2.5 μl Lipofectamine RNAiMAX.	Total RNA was extracted using the Direct-zol RNA MiniPrep kit including the recommended DNase I treatment (Zymo Research) according to the manufacturer's instructions.	Ribosomal depletion and strand specific library preparation was carried out with TruSeq Stranded Total RNA (with Ribo-Zero Gold) according to the manufacturer's instructions.	Illumina NovaSeq6000 sequencer with 2×100bp protocol, targeting approximately 50 million reads	Reads were aligned against the human genome (version 38, GENCODE release 33 transcript annotations supplemented with SIRVomeERCCome annotations from Lexogen; obtained from https://www.lexogen.com/sirvs/download/) using the STAR read aligner (version 2.7.3a).
+Protocol Hardware				Illumina NovaSeq 6000	
+Protocol Software					
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/
+Term Source Version
+SDRF File	E-MTAB-10716.sdrf.txt
+Comment[AEExperimentType]	RNA-seq of total RNA
+Comment[TemplateType]	Cell line - High-throughput sequencing
+Comment[RelatedExperiment]	E-MTAB-10711	E-MTAB-10718	E-MTAB-11184	PXD027120	PXD029898	PXD032337
+Comment[SecondaryAccession]	ERP130415
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR6222320-ERR6222337
+Comment[Submitted Name]	RNA-Seq of WT Flp-In T-REx 293, UPF3B knockout and UPF3A-UPF3B double knockout cell lines with additional siRNA-mediated control or UPF3B knockdowns
+Comment[ArrayExpressAccession]	E-MTAB-10716

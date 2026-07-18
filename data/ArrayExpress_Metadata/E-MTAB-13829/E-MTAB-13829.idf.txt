@@ -1,0 +1,46 @@
+MAGE-TAB Version	1.1
+Investigation Title	RNA-Seq of UPF1 depletion in human colorectal adenocarcinoma cell line HCT116 or human embryonic kidney cell line HEK293 via the dTAG degron system
+Experiment Description	UPF1 is a multi-domain RNA helicase that constantly monitors the transcriptome by non-specifically binding to mRNAs, dissociating from non-target transcripts, and initiating degradation on selected target RNAs via multiple proposed pathways such as nonsense-mediated decay (NMD). NMD is a translation-coupled mechanism that targets mRNAs harboring a premature stop codon (PTC) for degradation, thereby serving as a quality control and gene regulatory pathway ensuring transcriptome integrity. The UPF1 gene is essential in cultured human cells and previous studies relied mostly on RNA interference to downregulate UPF1. Here we established an dTAGV-1-inducible UPF1 degron system in the human colorectal adenocarcinoma cell line HCT116 or human embryonic kidney cell line HEK293 by tagging UPF1 at the N-terminus with an Myc-FKBP-tag (FKBP = FKBP12-F36V). With these cell lines we wanted to explore the transcriptome-wide expression changes including the extent of NMD inhibition upon rapid depletion of UPF1. To this end, depletion of UPF1 was induced with 0.25 µM dTAGV-1 for 12h. As controls, the parental cell line or untreated cells were used.
+Experimental Design	time series design	case control design	compound treatment design	genetic modification design
+Experimental Design Term Source REF	EFO	EFO	EFO	EFO
+Experimental Design Term Accession Number	EFO:0001779	EFO:0001427	EFO:0001755	EFO:0001758
+Experimental Factor Name	genotype	compound	dose	time
+Experimental Factor Type	genotype	compound	dose	time
+Experimental Factor Term Source REF	EFO	EFO	EFO	EFO
+Experimental Factor Term Accession Number	EFO_0000513	CHEBI_24431	EFO_0000428	EFO_0000721
+Person Last Name	Böhm	Gehring
+Person First Name	Volker	Niels
+Person Mid Initials		H
+Person Email	boehmv@uni-koeln.de	ngehring@uni-koeln.de
+Person Phone	++49 (0)221 470 5260
+Person Fax
+Person Address	Zülpicher Str. 47a 50674 Cologne Germany	Zülpicher Str. 47a 50674 Cologne Germany
+Person Affiliation	Gehring Lab Institute for Genetics  University of Cologne	Gehring Lab Institute for Genetics  University of Cologne
+Person Roles	data analyst;submitter	investigator
+Date of Experiment	2023-08-21
+Public Release Date	2025-09-01
+PubMed ID	40934927
+Publication DOI	10.1016/j.molcel.2025.08.015
+Publication Author List	Boehm V, Wallmeroth D, Wulf PO, Popp O, Teixeira Alves LG, Reinecke L, Riedel M, Wyler E, Franitza M, Becker K, Polkovnychenko K, Del Giudice S, Benlasfer N, Mertins P, Landthaler M, Gehring NH.
+Publication Title	Rapid UPF1 depletion illuminates the temporal dynamics of the NMD-regulated human transcriptome.
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+Protocol Name	P-MTAB-141324	P-MTAB-141325	P-MTAB-141326	P-MTAB-141327	P-MTAB-141328	P-MTAB-141329	P-MTAB-141330
+Protocol Type	sample collection protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	growth protocol	treatment protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0002944	EFO_0004184	EFO_0004170	EFO_0003789	EFO_0003969	EFO_0003816
+Protocol Description	Cells were harvested and lysed by adding 1 ml of in-house prepared TRI reagent to each well (prepared following DOI: 10.1371/journal.pbio.3000107).	Total RNA was extracted using the Direct-zol RNA MiniPrep kit (Zymo Research; Cat# R2052) including the recommended DNase I treatment according to the manufacturer's instructions.	Libraries were prepared from 500ng total RNA with the Illumina® Stranded mRNA Preparation kit. ERCC RNA Spike-In Mix (Thermo Fischer) was added to the samples before library preparation. After poly-A selection (using Oligo(dT) magnetic beads), mRNA was purified, fragmented and reverse transcribed with random hexamer primers. Second strand synthesis with dUTPs was followed by A-tailing, adapter ligation and library amplification (12 cycles) to create the final cDNA libraries. After library validation and quantification (Agilent Tape Station), equimolar amounts of library were pooled. 	The pool was quantified by using the Peqlab KAPA Library Quantification Kit and the Applied Biosystems 7900HT Sequence Detection System. The pool was sequenced on an Illumina NovaSeq6000 sequencing instrument with a PE100 protocol aiming for 75 million clusters per sample.	Both control and FKBP-UPF1-tagged HCT116 cell lines were maintained at 37°C and 5% CO2 in a humidified incubator in McCoy's 5A (Modified) Medium with GlutaMAX supplement (Gibco; Cat# 36600088), supplemented with 9% fetal bovine serum (Gibco; Cat# 10270106) and 1x Penicillin-Streptomycin (Gibco; Cat# 15140122). For control and FKBP-UPF1-tagged HEK293 cell lines, DMEM with high glucose and GlutaMAX supplement (Gibco; Cat# 61965059) was used and supplemented as described above.	5x10^5 cells were seeded in 6-well plates one day before starting the depletion experiment. UPF1 depletion was induced with 0.25 µM dTAGV-1 (Tocris Bioscience; Cat# 6914) for 12 hours. All cells were harvested at the same time to minimize differences in cell numbers.	Reads were aligned against the human genome (GRCh38, GENCODE release 42 transcript annotations supplemented with SIRVomeERCCome annotations from Lexogen; obtained from https://www.lexogen.com/sirvs/download/) using the STAR read aligner (version 2.7.10b, https://github.com/alexdobin/STAR).
+Protocol Hardware				Illumina NovaSeq 6000			
+Protocol Software							STAR read aligner (version 2.7.10b)
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/
+Term Source Version
+SDRF File	E-MTAB-13829.sdrf.txt
+Comment[AEExperimentType]	RNA-seq of coding RNA
+Comment[TemplateType]	Cell line - High-throughput sequencing
+Comment[RelatedExperiment]	E-MTAB-13839	E-MTAB-13788	E-MTAB-13789	E-MTAB-13787	E-MTAB-14725	E-MTAB-13836	E-MTAB-14755	E-MTAB-13837	PXD061797
+Comment[SecondaryAccession]	ERP157628
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR12684127-ERR12684127	http://www.ebi.ac.uk/ena/data/view/ERR12684127-ERR12684128	http://www.ebi.ac.uk/ena/data/view/ERR12684128-ERR12684129	http://www.ebi.ac.uk/ena/data/view/ERR12684129-ERR12684130	http://www.ebi.ac.uk/ena/data/view/ERR12684130-ERR12684131	http://www.ebi.ac.uk/ena/data/view/ERR12684131-ERR12684132	http://www.ebi.ac.uk/ena/data/view/ERR12684132-ERR12684133	http://www.ebi.ac.uk/ena/data/view/ERR12684133-ERR12684134	http://www.ebi.ac.uk/ena/data/view/ERR12684134-ERR12684135	http://www.ebi.ac.uk/ena/data/view/ERR12684135-ERR12684136	http://www.ebi.ac.uk/ena/data/view/ERR12684136-ERR12684137	http://www.ebi.ac.uk/ena/data/view/ERR12684137-ERR12684138	http://www.ebi.ac.uk/ena/data/view/ERR12684138-ERR12684139	http://www.ebi.ac.uk/ena/data/view/ERR12684139-ERR12684140	http://www.ebi.ac.uk/ena/data/view/ERR12684140-ERR12684141	http://www.ebi.ac.uk/ena/data/view/ERR12684141-ERR12684142	http://www.ebi.ac.uk/ena/data/view/ERR12684142-ERR12684143	http://www.ebi.ac.uk/ena/data/view/ERR12684143-ERR12684144	http://www.ebi.ac.uk/ena/data/view/ERR12684144-ERR12684144
+Comment[Submitted Name]	RNA-Seq of UPF1 depletion in human colorectal adenocarcinoma cell line HCT116 or human embryonic kidney cell line HEK293 via the dTAG degron system
+Comment[ArrayExpressAccession]	E-MTAB-13829

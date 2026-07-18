@@ -1,0 +1,46 @@
+MAGE-TAB Version	1.1
+Investigation Title	RNA-Seq of UPF1 recovery in human colorectal adenocarcinoma cell line HCT116 previously depleted via the auxin-inducible degron (AID) system
+Experiment Description	UPF1 is a multi-domain RNA helicase that constantly monitors the transcriptome by non-specifically binding to mRNAs, dissociating from non-target transcripts, and initiating degradation on selected target RNAs via multiple proposed pathways such as nonsense-mediated decay (NMD). NMD is a translation-coupled mechanism that targets mRNAs harboring a premature stop codon (PTC) for degradation, thereby serving as a quality control and gene regulatory pathway ensuring transcriptome integrity. The UPF1 gene is essential in cultured human cells and previous studies relied mostly on RNA interference to downregulate UPF1. Here we used an auxin-inducible UPF1 degron system in the human colorectal adenocarcinoma cell line HCT116 by first inserting the auxin receptor F-box protein-encoding AtAFB2-mCherry in the AAVS1 locus, followed by tagging UPF1 at the N-terminus with an V5-AID-tag (AID = miniIAA7 = AtIAA7 amino acids 37–104). With this experiment we wanted to explore the time-resolved transcriptome-wide expression changes upon recovery (re-expression) of UPF1 after 24-hour depletion of UPF1. To this end, depletion of UPF1 was induced with 500 µM indole-3-acetic acid (IAA) for 24 hours and the cells were incubated for various recovery time periods (0-48h) without IAA. As controls, untreated cells were used.
+Experimental Design	time series design	case control design	compound treatment design	genetic modification design
+Experimental Design Term Source REF	EFO	EFO	EFO	EFO
+Experimental Design Term Accession Number	EFO:0001779	EFO:0001427	EFO:0001755	EFO:0001758
+Experimental Factor Name	compound	dose	time	recovery
+Experimental Factor Type	compound	dose	time	recovery
+Experimental Factor Term Source REF	EFO	EFO	EFO
+Experimental Factor Term Accession Number	CHEBI_24431	EFO_0000428	EFO_0000721
+Person Last Name	Böhm	Gehring
+Person First Name	Volker	Niels
+Person Mid Initials		H
+Person Email	boehmv@uni-koeln.de	ngehring@uni-koeln.de
+Person Phone	++49 (0)221 470 5260
+Person Fax
+Person Address	Zülpicher Str. 47a 50674 Cologne Germany	Zülpicher Str. 47a 50674 Cologne Germany
+Person Affiliation	Gehring Lab Institute for Genetics  University of Cologne	Gehring Lab Institute for Genetics  University of Cologne
+Person Roles	data analyst;submitter
+Date of Experiment	2023-04-05
+Public Release Date	2025-09-01
+PubMed ID	40934927
+Publication DOI	10.1016/j.molcel.2025.08.015
+Publication Author List	Boehm V, Wallmeroth D, Wulf PO, Popp O, Teixeira Alves LG, Reinecke L, Riedel M, Wyler E, Franitza M, Becker K, Polkovnychenko K, Del Giudice S, Benlasfer N, Mertins P, Landthaler M, Gehring NH.
+Publication Title	Rapid UPF1 depletion illuminates the temporal dynamics of the NMD-regulated human transcriptome.
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+Protocol Name	P-MTAB-156245	P-MTAB-156246	P-MTAB-156247	P-MTAB-156248	P-MTAB-156249	P-MTAB-156250	P-MTAB-156251
+Protocol Type	sample collection protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	growth protocol	treatment protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0002944	EFO_0004184	EFO_0004170	EFO_0003789	EFO_0003969	EFO_0003816
+Protocol Description	Cells were harvested and lysed by adding 1 ml of in-house prepared TRI reagent to each well (prepared following DOI: 10.1371/journal.pbio.3000107).	Total RNA was extracted using the Direct-zol RNA MiniPrep kit (Zymo Research; Cat# R2052) including the recommended DNase I treatment according to the manufacturer's instructions.	Libraries were prepared using the Illumina Stranded TruSeq RNA sample preparation kit. ERCC RNA Spike-In Mix (Thermo Fischer) was added to the samples before library preparation. Library preparation started with 500ng total RNA. After poly-A selection (using poly-T oligo-attached magnetic beads), mRNA was purified and fragmented using divalent cations under elevated temperature. The RNA fragments underwent reverse transcription using random primers. This was followed by second strand cDNA synthesis with DNA Polymerase I and RNase H. After end repair and A-tailing, indexing adapters were ligated. The products were then purified and amplified (15 cycles) to create the final cDNA libraries. After library validation and quantification (Agilent Tape Station), equimolar amounts of library were pooled.	The pool was quantified by using the Peqlab KAPA Library Quantification Kit and the Applied Biosystems 7900HT Sequence Detection System. The pool was sequenced on an Illumina NovaSeq6000 sequencing instrument with a PE100 protocol aiming for 75 million clusters per sample.	Both control and N-AID-UPF1-tagged HCT116 cell lines were maintained at 37°C and 5% CO2 in a humidified incubator in McCoy's 5A (Modified) Medium with GlutaMAX supplement (Gibco; Cat# 36600088), supplemented with 9% fetal bovine serum (Gibco; Cat# 10270106) and 1x Penicillin-Streptomycin (Gibco; Cat# 15140122).	1.25x10^5 cells were seeded in 6-well plates. UPF1 depletion was induced for 24 hours with 500 µM indole-3-acetic acid (IAA; Sigma-Aldrich; Cat# I5148). Afterwards, the cells were incubated in medium without IAA for various time points (between 0 and 48 hours before harvesting). All cells were harvested at the same time to minimize differences in cell numbers.	Reads were aligned against the human genome (GRCh38, GENCODE release 42 transcript annotations supplemented with SIRVomeERCCome annotations from Lexogen; obtained from https://www.lexogen.com/sirvs/download/) using the STAR read aligner (version 2.7.10b, https://github.com/alexdobin/STAR).
+Protocol Hardware				Illumina NovaSeq 6000			
+Protocol Software							STAR read aligner (version 2.7.10b)
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/
+Term Source Version
+SDRF File	E-MTAB-13789.sdrf.txt
+Comment[AEExperimentType]	RNA-seq of coding RNA
+Comment[TemplateType]	Cell line - High-throughput sequencing
+Comment[RelatedExperiment]	E-MTAB-13839	E-MTAB-13788	E-MTAB-14725	E-MTAB-13787	E-MTAB-13829	E-MTAB-13836	E-MTAB-14755	E-MTAB-13837	PXD061797
+Comment[SecondaryAccession]	ERP173323
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR15109852-ERR15109852	http://www.ebi.ac.uk/ena/data/view/ERR15109852-ERR15109853	http://www.ebi.ac.uk/ena/data/view/ERR15109853-ERR15109854	http://www.ebi.ac.uk/ena/data/view/ERR15109854-ERR15109855	http://www.ebi.ac.uk/ena/data/view/ERR15109855-ERR15109856	http://www.ebi.ac.uk/ena/data/view/ERR15109856-ERR15109857	http://www.ebi.ac.uk/ena/data/view/ERR15109857-ERR15109858	http://www.ebi.ac.uk/ena/data/view/ERR15109858-ERR15109859	http://www.ebi.ac.uk/ena/data/view/ERR15109859-ERR15109860	http://www.ebi.ac.uk/ena/data/view/ERR15109860-ERR15109861	http://www.ebi.ac.uk/ena/data/view/ERR15109861-ERR15109862	http://www.ebi.ac.uk/ena/data/view/ERR15109862-ERR15109863	http://www.ebi.ac.uk/ena/data/view/ERR15109863-ERR15109864	http://www.ebi.ac.uk/ena/data/view/ERR15109864-ERR15109865	http://www.ebi.ac.uk/ena/data/view/ERR15109865-ERR15109866	http://www.ebi.ac.uk/ena/data/view/ERR15109866-ERR15109867	http://www.ebi.ac.uk/ena/data/view/ERR15109867-ERR15109868	http://www.ebi.ac.uk/ena/data/view/ERR15109868-ERR15109869	http://www.ebi.ac.uk/ena/data/view/ERR15109869-ERR15109870	http://www.ebi.ac.uk/ena/data/view/ERR15109870-ERR15109871	http://www.ebi.ac.uk/ena/data/view/ERR15109871-ERR15109872	http://www.ebi.ac.uk/ena/data/view/ERR15109872-ERR15109873	http://www.ebi.ac.uk/ena/data/view/ERR15109873-ERR15109874	http://www.ebi.ac.uk/ena/data/view/ERR15109874-ERR15109875	http://www.ebi.ac.uk/ena/data/view/ERR15109875-ERR15109875
+Comment[Submitted Name]	RNA-Seq of UPF1 recovery in human colorectal adenocarcinoma cell line HCT116 previously depleted via the auxin-inducible degron (AID) system
+Comment[ArrayExpressAccession]	E-MTAB-13789

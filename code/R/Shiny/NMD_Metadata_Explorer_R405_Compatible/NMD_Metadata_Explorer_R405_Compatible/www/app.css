@@ -1,0 +1,193 @@
+/*
+  Server-compatible styling for Shiny 1.6 / Bootstrap 3.
+  This is ordinary CSS and requires no bslib/Sass compilation.
+*/
+
+.navbar-default {
+  background-color: #245b78;
+  border-color: #1c475e;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #1c475e;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #16394b;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #245b78;
+  border-color: #1c475e;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #1c475e;
+  border-color: #16394b;
+}
+
+.btn-success {
+  background-color: #287a62;
+  border-color: #20624f;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: #20624f;
+  border-color: #184a3c;
+}
+
+body {
+  background: #f5f7f9;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.container-fluid {
+  max-width: 1800px;
+}
+
+.page-intro {
+  background: #ffffff;
+  border-left: 5px solid #245b78;
+  border-radius: 6px;
+  margin: 18px 0;
+  padding: 16px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.page-intro h2 {
+  margin-top: 0;
+}
+
+.well {
+  background: #ffffff;
+  border: 1px solid #dce3e8;
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+.summary-card {
+  background: #ffffff;
+  border: 1px solid #dce3e8;
+  border-top: 4px solid #245b78;
+  border-radius: 7px;
+  margin: 12px 0 18px 0;
+  min-height: 94px;
+  padding: 14px 16px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.summary-value {
+  color: #183b4e;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.summary-label {
+  color: #5f6f79;
+  font-size: 0.92rem;
+  margin-top: 5px;
+}
+
+.empty-state {
+  background: #ffffff;
+  border: 1px dashed #aebbc4;
+  border-radius: 7px;
+  color: #5f6f79;
+  margin: 12px 0 18px 0;
+  padding: 24px;
+  text-align: center;
+}
+
+.status-panel {
+  border-radius: 7px;
+  margin: 12px 0;
+  padding: 14px 18px;
+}
+
+.status-panel p {
+  margin: 6px 0 0 0;
+}
+
+.status-success {
+  background: #edf8f3;
+  border: 1px solid #abd8c5;
+  color: #205f4c;
+}
+
+.status-error {
+  background: #fff1f0;
+  border: 1px solid #e5b8b3;
+  color: #8a3028;
+}
+
+.action-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.interpretation-box {
+  background: #ffffff;
+  border: 1px solid #dce3e8;
+  border-radius: 7px;
+  margin-top: 12px;
+  padding: 16px;
+}
+
+.interpretation-box pre {
+  background: transparent;
+  border: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.dataTables_wrapper {
+  background: #ffffff;
+  border-radius: 6px;
+  margin-top: 12px;
+  padding: 12px;
+}
+
+.tab-content {
+  padding-top: 8px;
+}
+
+.control-label {
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .summary-card {
+    min-height: auto;
+  }
+}

@@ -1,0 +1,71 @@
+MAGE-TAB Version	1.1
+Investigation Title	RNA-Seq of Flp-In T-REx 293, two clones of CRISPR-Cas9 mediated knockout of CASC3 and further CASC3 depletion via small interfering RNAs
+
+Experimental Design	case control design	genetic modification design
+Experimental Design Term Source REF	EFO	EFO
+Experimental Design Term Accession Number	EFO_0001427	EFO:0001758
+
+Experimental Factor Name	genotype	RNA interference
+Experimental Factor Type	genotype	RNA interference
+Experimental Factor Term Source REF	EFO	EFO
+Experimental Factor Term Accession Number	EFO_0000513	GO_0016246
+
+Person Last Name	Borges
+Person First Name	Thiago Britto
+Person Mid Initials
+Person Email	thiago.brittoborges@uni-heidelberg.de
+Person Phone
+Person Fax
+Person Affiliation	Section of Bioinformatics and Systems Cardiology, Department of Internal Medicine III and Klaus Tschira Institute for Integrative Computational Cardiology  DZHK (German Centre for Cardiovascular Research), Partner site Heidelberg/Mannheim
+Person Address	Universitäts Klinikum Heidelberg – University Hospital Heidelberg Section of Bioinformatics and Systems Cardiology Analysezentrum III - Klaus Tschira Institute  Im Neuenheimer Feld 669  69120 Heidelberg
+Person Roles	data analyst;submitter
+Person Roles Term Source REF
+Person Roles Term Accession Number
+
+Quality Control Type
+Quality Control Term Source REF
+Quality Control Term Accession Number
+
+Replicate Type
+Replicate Term Source REF
+Replicate Term Accession Number
+
+Normalization Type
+Normalization Term Source REF
+Normalization Term Accession Number
+
+Date of Experiment	2019-04-29
+Public Release Date	2020-07-03
+
+PubMed ID
+Publication DOI
+Publication Author List
+Publication Title
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+
+Experiment Description	We report two knockouts of the CASC3 (Barentsz, MLN51) gene and further depletion of gene expression with small interfering RNAs (siRNAs). CASC3 is a component of the exon-junction complex (EJC) which is deposited upstream of splice junctions on the mRNA. The EJC core and peripheral interacting factors are involved in RNA splicing, export, translation and nonsense-mediated decay. Contrasting to the other factors that form the exon-junction complex, CASC3 individual role on these processes was relatively poorly understood in the literature. To further elucidate the role of CASC3 in these processes we have established 2 different CRISPR-Cas9 genetic knockouts (KO) of CASC3. We extracted the total RNA by using the NucleoSpin RNA Plus kit (Macherey-Nagel), and performed ribosomal depletion and strand-specific library preparation with the TruSeq Stranded Total RNA protocol with Ribo-Zero Gold. Sequencing of the KO clones as well as the KO clones treated with CASC3 siRNA was carried out with the Illumina NovaSeq6000 sequencer with 2×100bp, targeting approximately 50 million read-pairs per sample. By studying the RNA-Seq of the 4 conditions, one with minimal CASC3 expression (condition H) or and three with complete depletion of the protein expression (conditions H-KD, T, T-KD), we observed the up-regulation of known and novel nonsense mediated decay substrates, thus establishing CASC3 as a critical factor for efficient nonsense mediated decay of certain transcripts.
+
+Protocol Name	P-MTAB-90680	P-MTAB-90681	P-MTAB-90678	P-MTAB-90679
+Protocol Type	nucleic acid library construction protocol	nucleic acid sequencing protocol	sample collection protocol	nucleic acid extraction protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0004184	EFO_0004170	EFO_0005518	EFO_0002944
+Protocol Description	Ribosomal depletion and strand specific library preparation was carried out with TruSeq Stranded Total RNA (with Ribo-Zero Gold) according to the manufacturer's instructions.	Illumina NovaSeq6000 sequencer with 2×100bp protocol, targeting approximately 50 million reads	Flp-In 293 T-REx (Thermo Fisher Scientific) WT and CASC3-KO cells were maintained at 37° C, 5% CO2 and 90% humidity in Dublecco’s Modified Eagle Medium (DMEM, Thermo Fisher Scientific) supplemented with 9% fetal bovine serum (FBS) and Penicillin-Streptomycin (both Thermo Fisher Scientific). For siRNA transfection, cells were reverse transfected with 60 pmol siRNA targeting CASC3 (or Luc in the negative control) per 2 x 10^5 cells using 2.5 μl Lipofectamine RNAiMAX.	Total RNA was extracted with NucleoSpin RNA Plus (Macherey-Nagel) according to the manufacturer's instructions.
+Protocol Parameters
+Protocol Hardware		Illumina NovaSeq 6000
+Protocol Software
+Protocol Contact
+
+Term Source Name	EFO	ArrayExpress
+Term Source File	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/arrayexpress/
+Term Source Version	2.81
+
+SDRF File	E-MTAB-8461.sdrf.txt
+Comment [TemplateType]	Cell line - High-throughput sequencing
+Comment [Submitted Name]	RNA-Seq of Flp-In T-REx 293, two clones of CRISPR-Cas9 mediated knockout of CASC3 and further CASC3 depletion via small interfering RNAs
+Comment [SecondaryAccession]	ERP118046
+Comment [SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR3618012-ERR3618071
+Comment [AEExperimentType]	RNA-seq of coding RNA
+Comment[ArrayExpressAccession]	E-MTAB-8461
+Comment [RelatedExperiment]	PXD015754
