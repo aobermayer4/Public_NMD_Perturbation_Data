@@ -2,6 +2,8 @@
 .RData
 .Ruserdata
 .Rproj.user/
+renv/
+renv.lock
 
 .ipynb_checkpoints/
 __pycache__/
