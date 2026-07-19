@@ -10,18 +10,19 @@ suppressPackageStartupMessages({
   library(jsonlite)
 })
 
-setwd("C:\\Users\\4474108\\Projects\\Active\\Public_NMD_Perturbation_Data")
+#setwd("C:\\Users\\4474108\\Projects\\Active\\Public_NMD_Perturbation_Data")
 
 
-source("code/R/arrayexpress_metadata_parser.R")
+source("code/R/arrayexpress_metadata_parser_with_one_row_samples.R")
 
-source("code/R/arrayexpress_one_row_samples_patch.R")
+#source("code/R/arrayexpress_one_row_samples_patch.R")
 
-ae_meta_res <- readRDS("C:\\Users\\4474108\\Projects\\Active\\Public_NMD_Perturbation_Data\\data\\ArrayExpress_Metadata_v2\\ArrayExpress_metadata_results.rds")
+ae_meta_res <- readRDS("data/ArrayExpress_Metadata_v4/ArrayExpress_metadata_results.rds")
 
 ae_tables <- ae_combine_results(ae_meta_res)
 
+writexl::write_xlsx(ae_tables,"data/ArrayExpress_Parsed_Output_20260718.xlsx", format_headers = F)
 
-sdrf <- ae_tables$samples
+sdrf <- ae_tables$samples_one_row
 
-le
+
