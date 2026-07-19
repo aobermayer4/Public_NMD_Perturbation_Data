@@ -19,6 +19,8 @@ suppressPackageStartupMessages({
   library(jsonlite)
 })
 
+
+
 setwd("~/Projects/Active/Public_NMD_Perturbation_Data/")
 
 
@@ -37,13 +39,14 @@ study_ids <- unique(study_ids)
 
 ae_results <- ae_fetch_many(
   accessions = study_ids,
-  base_dir = "data/ArrayExpress_Metadata_v2",
+  base_dir = "data/ArrayExpress_Metadata_v3",
   overwrite = FALSE,
   use_api_fallback = TRUE,
   verbose = TRUE
 )
 
 ae_tables <- ae_combine_results(ae_results)
+
 
 ae_write_results(
   ae_tables,

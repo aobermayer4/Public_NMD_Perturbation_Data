@@ -172,6 +172,7 @@ ae_download_with_package <- function(
     overwrite = FALSE,
     verbose = TRUE) {
 
+  # Get formal function arguments of `ArrayExpress::getAE()` function
   getae_formals <- names(formals(ArrayExpress::getAE))
 
   args <- list(
@@ -181,6 +182,7 @@ ae_download_with_package <- function(
     extract = TRUE
   )
 
+  # Overite formal function arguments with user input
   if ("overwrite" %in% getae_formals) {
     args$overwrite <- overwrite
   }
@@ -296,8 +298,7 @@ ae_download_from_biostudies <- function(
   info_json <- ae_json_from_url(info_url)
 
   # The study JSON contains the paths of all files. Restrict this to IDF
-  # and SDRF files so processed matrices and raw sequence files are not
-  # downloaded merely because humans enjoy filling disks.
+  # and SDRF files so processed matrices and raw sequence files are not downloaded
   all_strings <- unique(as.character(
     unlist(study_json, recursive = TRUE, use.names = FALSE)
   ))
@@ -513,10 +514,16 @@ ae_read_sdrf_file <- function(file, accession) {
     na.strings = c("", "NA", "N/A", "null"),
     data.table = FALSE,
     check.names = FALSE,
+    colClasses = "character",
     encoding = "UTF-8"
   )
 
+  # Redundant by design: protects against unexpected fread behavior and
+  # guarantees that pivot_longer() combines only character columns.
+  sdrf[] <- lapply(sdrf, as.character)
+
   original_names <- names(sdrf)
+
   unique_names <- make.unique(
     original_names,
     sep = "__duplicate_"
@@ -530,7 +537,7 @@ ae_read_sdrf_file <- function(file, accession) {
   )
 
   wide <- tibble::as_tibble(sdrf) |>
-    mutate(
+    dplyr::mutate(
       Study_ID = accession,
       Sample_ID = sample_id,
       SDRF_Row = dplyr::row_number(),
@@ -547,35 +554,36 @@ ae_read_sdrf_file <- function(file, accession) {
     tidyr::pivot_longer(
       cols = dplyr::all_of(unique_names),
       names_to = "field_unique",
-      values_to = "value"
+      values_to = "value",
+      values_transform = list(value = as.character)
     ) |>
-    mutate(
-      field_raw = unname(name_map[.data$field_unique]),
-      field = ae_normalize_field(.data$field_raw),
-      value = stringr::str_squish(as.character(.data$value))
+    dplyr::mutate(
+      field_raw = unname(name_map[field_unique]),
+      field = ae_normalize_field(field_raw),
+      value = stringr::str_squish(as.character(value))
     ) |>
-    filter(
-      !is.na(.data$value),
-      nzchar(.data$value)
+    dplyr::filter(
+      !is.na(value),
+      nzchar(value)
     ) |>
-    select(
-      .data$Study_ID,
-      .data$Sample_ID,
-      .data$SDRF_Row,
-      .data$SDRF_File,
-      .data$field_raw,
-      .data$field,
-      .data$value
+    dplyr::select(
+      Study_ID,
+      Sample_ID,
+      SDRF_Row,
+      SDRF_File,
+      field_raw,
+      field,
+      value
     )
 
   protocol_refs <- long |>
-    filter(
+    dplyr::filter(
       stringr::str_detect(
-        .data$field_raw,
+        field_raw,
         stringr::regex("^Protocol REF", ignore_case = TRUE)
       )
     ) |>
-    rename(Protocol_REF = .data$value)
+    dplyr::rename(Protocol_REF = value)
 
   list(
     wide = wide,
@@ -583,6 +591,7 @@ ae_read_sdrf_file <- function(file, accession) {
     protocol_refs = protocol_refs
   )
 }
+
 
 
 # -------------------------------------------------------------------------
@@ -648,11 +657,11 @@ ae_read_idf_file <- function(file, accession) {
     }
   ) |>
     mutate(
-      value = stringr::str_squish(as.character(.data$value))
+      value = stringr::str_squish(as.character(value))
     ) |>
     filter(
-      !is.na(.data$value),
-      nzchar(.data$value)
+      !is.na(value),
+      nzchar(value)
     )
 
   protocol_rows <- which(
@@ -702,9 +711,9 @@ ae_read_idf_file <- function(file, accession) {
       }
     ) |>
       relocate(
-        .data$Study_ID,
-        .data$IDF_File,
-        .data$Protocol_Index
+        Study_ID,
+        IDF_File,
+        Protocol_Index
       )
 
     data_columns <- setdiff(
