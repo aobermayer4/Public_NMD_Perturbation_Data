@@ -1,0 +1,30 @@
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+
+# Large analysis files
+*.loom
+*.h5
+*.h5ad
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+# renv local package installations
+renv/library/
+renv/staging/
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+# Local archive of previous NMD repository
+NMD_Perturb_Archive/

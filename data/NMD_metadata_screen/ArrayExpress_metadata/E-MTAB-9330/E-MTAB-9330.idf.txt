@@ -1,0 +1,70 @@
+MAGE-TAB Version	1.1
+Investigation Title	mRNA-Seq from control cells and two clones of Flp-In-T-REx-293 cells modified via CRISPR-Cas9 to knockout SMG7 in combination to knockdowns of control, SMG5, and SMG6
+
+Experimental Design	case control design	genetic modification design
+Experimental Design Term Source REF	EFO	EFO
+Experimental Design Term Accession Number	EFO:0001427	EFO:0001758
+
+Experimental Factor Name	genotype	RNA interference
+Experimental Factor Type	genotype	RNA interference
+Experimental Factor Term Source REF	EFO	EFO
+Experimental Factor Term Accession Number	EFO_0000513	GO_0016246
+
+Person Last Name	Gehring	Borges
+Person First Name	Niels	Thiago Britto
+Person Mid Initials	H
+Person Email	ngehring@uni-koeln.de	thiago.brittoborges@uni-heidelberg.de
+Person Phone
+Person Fax
+Person Affiliation	Institute for Genetics, University of Cologne Center for Molecular Medicine Cologne,	Section of Bioinformatics and Systems Cardiology, Department of Internal Medicine III and Klaus Tschira Institute for Integrative Computational Cardiology, University of Heidelberg
+Person Address	University of Cologne, 50937 Cologne, Germany
+Person Roles	investigator	submitter
+Person Roles Term Source REF
+Person Roles Term Accession Number
+
+Quality Control Type
+Quality Control Term Source REF
+Quality Control Term Accession Number
+
+Replicate Type
+Replicate Term Source REF
+Replicate Term Accession Number
+
+Normalization Type
+Normalization Term Source REF
+Normalization Term Accession Number
+
+Date of Experiment	2020-03-02
+Public Release Date	2021-05-07
+
+PubMed ID	34172724
+Publication DOI	10.1038/s41467-021-24046-3
+Publication Author List	Boehm V, Kueckelmann S, Gerbracht JV, Kallabis S, Britto-Borges T, Altmüller J, Krüger M, Dieterich C, Gehring NH.
+Publication Title	SMG5-SMG7 authorize nonsense-mediated mRNA decay by enabling SMG6 endonucleolytic activity.
+Publication Status
+Publication Status Term Source REF
+Publication Status Term Accession Number
+
+Experiment Description	Mature mRNAs undergo quality control during translation that may lead to RNA degradation by triggering the nonsense mediated decay (NMD) pathway. Aberrant translation due to features such as the presence of a premature stop codon downstream on an exon-exon junction or an intron in the 3'UTR activates NMD. However, many of the features that lead to the activation of this pathway are unclear. UPF1, an RNA helicase, is the core NMD factor. UPF1 forms a multi-protein complex by recruiting a series of factors and other protein complexes in a process that depends on the UPF1 phosphorylation-dephosphorylation cycle. Among the factors recruited by UPF1, SMG5-SMG7 and SMG6 have critical importance in executing NMD. The SMG5-SMG7 heterodimer induces the exonucleolytic degradation of the mRNA, which depends on the recruitment of deadenylation factors. SMG6 has endonucleolytic activity and cleaves the targeted transcript close to the stop codon. The redundancy between the exonucleolytic and endonucleolytic paths to achieve degradation during NMD has been previously reported in the literature. To investigate the apparent redundancy between SMG5-SMG7 and SMG6 activity and to further understand the features that lead to the activation of NMD, we have generated two clones of SMG7 knockout human cells using CRISPR-Cas9. We generated mRNA-Sequencing data for control and both SMG7 KO clones with additional siRNA-mediated knockdown of Luciferase (Luc) as control, SMG5 or SMG6.
+
+Protocol Name	P-MTAB-98929	P-MTAB-98933	P-MTAB-98932	P-MTAB-98931	P-MTAB-98930
+Protocol Type	sample collection protocol	treatment protocol	nucleic acid sequencing protocol	nucleic acid library construction protocol	nucleic acid extraction protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0003969	EFO_0004170	EFO_0004184	EFO_0002944
+Protocol Description	Flp-In-T-REx-293 (human, female, embryonic kidney, epithelial; Thermo Fisher Scientific) cells were cultured in high-glucose, GlutaMAX DMEM (Gibco) supplemented with 9% fetal bovine serum (Gibco) and 1x Penicillin Streptomycin (Gibco). The cells were cultivated at 37°C and 5% CO2 in a humidified incubator.	Generation of knockout cells using CRISPR-Cas9: The knockouts were performed using the Alt-R CRISPR-Cas9 system (Integrated DNA Technologies) and reverse transfection of a Cas9:guideRNA ribonucleoprotein complex using Lipofectamine RNAiMAX (Thermo Fisher Scientific) according to the manufacturer’s protocol. The crRNA sequence (Design ID: Hs.Cas9.SMG7.1.AD; Integrated DNA Technologies) to target SMG7 was /AlTR1/rGrArArArArUrGrCrUrArGrUrUrArCrCrGrArUrUrGrUrUrUrUrArGrArGrCrUrArUrGrCrU/AlTR2/. Reverse transfection was performed on 1.5x10^5 cells per crRNA in 12-well plates. 48 h after transfection the cells were trypsinized, counted and seeded at a mean density of a single cell per well in 96-well plates. Cell colonies originating from a single clone were then screened via Western blot and genome editing of SMG7 was analyzed on the genomic level via DNA extraction and Sanger sequencing. Alterations on the transcript level were analyzed via RNA extraction followed by reverse transcription and Sanger sequencing. siRNA-mediated knockdowns: Cells were seeded in 6-well plates at a density of 2- 3x10^5 cells per well and reverse transfected using 2.5 µl Lipofectamine RNAiMAX and 60 pmol of the respective siRNA(s) according to the manufacturer’s instructions. siRNA were purchased from Integrated DNA Technologies and had the following targeting sequence: for Luciferase (Luc): 5′CGUACGCGGAAUACUUCGA-3′; for SMG5: 5′ GAAGGAAAUUGGUUGAUAC-3′; for SMG6: 5′ GGGUCACAGUGCUGAAGUA-3′.	The pool was quantified by using the Peqlab KAPA Library Quantification Kit and the Applied Biosystems 7900HT Sequence Detection System and sequenced on an Illumina NovaSeq6000 sequencing instrument and a PE100 protocol.	The library preparation was performed with the TrueSeq mRNA Stranded kit (Illumina). After poly-A selection (using poly-T oligo-attached magnetic beads), mRNA was purified and fragmented using divalent cations under elevated temperature. The RNA fragments underwent reverse transcription using random primers. This is followed by second strand cDNA synthesis with DNA Polymerase I and RNase H. After end repair and A-tailing, indexing adapters were ligated. The products were then purified and amplified to create the final cDNA libraries. After library validation and quantification (Agilent tape station), equimolar amounts of library were pooled.	RNA was isolated using peqGOLD TriFast (VWR Peqlab) following the manufacturer’s instructions. Following changes were made: Instead of 200 μl chloroform, 150 μl 1-Bromo-3-chloropropane (Molecular Research Center, Inc.) was used. RNA was resuspended in 20 μl RNase-free water.
+Protocol Parameters
+Protocol Hardware			Illumina NovaSeq 6000
+Protocol Software
+Protocol Contact
+
+Term Source Name	EFO	ArrayExpress
+Term Source File	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/arrayexpress/
+Term Source Version	2.38
+
+SDRF File	E-MTAB-9330.sdrf.txt
+Comment [TemplateType]	Cell line - High-throughput sequencing
+Comment [Submitted Name]	mRNA-Seq from control cells and two clones of Flp-In-T-REx-293 cells modified via CRISPR-Cas9 to knockout SMG7 in combination to knockdowns of control, SMG5, and SMG6
+Comment [SecondaryAccession]	ERP122822
+Comment [SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR4330659-ERR4330682
+Comment [AEExperimentType]	RNA-seq of coding RNA
+Comment[ArrayExpressAccession]	E-MTAB-9330
