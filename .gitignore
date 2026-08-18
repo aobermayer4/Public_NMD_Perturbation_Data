@@ -28,3 +28,6 @@ __pycache__/
 *.tmp
 # Local archive of previous NMD repository
 NMD_Perturb_Archive/
+
+# Windows NTFS download metadata
+*:Zone.Identifier
